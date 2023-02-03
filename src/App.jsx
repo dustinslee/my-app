@@ -13,8 +13,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<NavBar />}>
           <Route index path="/" element={<Home />}/>
-          <Route path="about" element={<About />}/>
-          <Route path="contact" element={<Contact />}/>
+          <Route path="/about/:heroId" element={<About />}/>
+          <Route path="/contact" element={<Contact />}/>
           <Route path="*" element={<NoMatch />}/>
         </Route>
       </Routes>
